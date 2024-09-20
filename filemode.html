@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/1e996f8cdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+
+    
+
+    <title>INAOEP</title>
+
+    <style>
+        body {
+            padding-top: 65px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-">
+            <a class="navbar-brand" href="index.html">  Service  </a>
+            <a class="navbar-brand" href="filemode.html">  Json File  </a>
+        </div>
+    </nav>
+
+    <div class="main">
+
+        <div class="container">
+
+            <div class="table-responsive">
+                <table class="table table-hover" id="mainTable">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">A. Paterno</th>
+                          <th scope="col">A. Materno</th>
+                          <th scope="col">CURP</th>
+                          <th scope="col">Correo electrónico</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                      </tbody>
+                </table>
+              </div>
+
+        </div>
+
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Datos del Solicitante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- datos... -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+</body>
+
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/vendor/bootstrap/js/bootstrap.js"></script>
+<!-- <script src="/controllers/INAOEPController.js"></script> -->
+<script src="/controllers/INAOEPController.js" data-param="2"></script>
+
+
+
+</html>
